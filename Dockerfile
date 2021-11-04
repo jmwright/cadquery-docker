@@ -8,6 +8,8 @@ WORKDIR /home/cq/
 
 USER root
 
+RUN apt-get update
+
 RUN apt-get install -y libgl1-mesa-glx
 
 RUN conda install -c cadquery -c conda-forge cadquery=master
